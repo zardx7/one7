@@ -1,0 +1,17 @@
+{
+  "name": "projects-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/dev.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "in_array": "^1.1.0",
+    "johngrimm-utils": "0.0.4",
+    "readline-sync": "^1.4.10"
+  }
+}
