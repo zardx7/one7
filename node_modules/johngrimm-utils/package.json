@@ -1,0 +1,19 @@
+{
+  "name": "johngrimm-utils",
+  "version": "0.0.4",
+  "description": "Module created for facilitated your life ;) Bringing some native PHP modules to the NODE",
+  "main": "index.js",
+  "keywords": [
+    "PHP TO NODE",
+    "PHP",
+    "CURL",
+    "REQUEST",
+    "utils",
+    "cpf"
+  ],
+  "author": "JohnGrimm",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
