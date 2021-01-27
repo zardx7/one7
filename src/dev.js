@@ -1,7 +1,6 @@
 const readlineSync = require('readline-sync');
 const fs = require('fs')
 const { curl, GetStr, rand } = require('johngrimm-utils');
-const { exitCode } = require('process');
 console.clear();
 
 console.log("#========================#")
@@ -70,11 +69,10 @@ if (teste == 1) {
       var cidade = GetStr(d1, 'NOMUNICIPIO="', '"')
       var uf = GetStr(d1, 'SGUF="', '"')
       var nomeMae = GetStr(d1, 'NOMAE="', '"')
-      let [ dia, mes, ano ] = nasc.split(/\/|\||\\|\;|\:|\»/g)
 
       const street = `RUA ${rua}, ${numCasa} ${complemento} - ${bairro}, ${cidade}/${uf} - ${cep}`
 
-      var retorno = `CPF ENCONTRADO (${d0}) > CPF: ${d0} > NOME: ${nome} > DAT NASC: ${nasc} > NOME MAE: ${nomeMae} > ENDEREÇO: ${street.toUpperCase()}\n`
+      var retorno = `CPF ENCONTRADO (${d0}) > CPF: ${d0} > NOME: ${nome} > DAT NASC: ${nasc} > NOME MAE: ${nomeMae} > ENDEREÇO: ${street.toUpperCase()} >> [ 𝙤𝙣𝙚7 ]\n`
       
       
       fs.writeFile('dados extraidos.txt', retorno, {enconding:'utf-8',flag: 'a'}, function (err) {
@@ -83,6 +81,6 @@ if (teste == 1) {
     });
   }
 
-  }, 1000 * 1)
+  }, 100 * 1)
 
 }
